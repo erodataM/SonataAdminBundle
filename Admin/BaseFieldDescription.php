@@ -89,7 +89,7 @@ abstract class BaseFieldDescription implements FieldDescriptionInterface
     /*
      * var array the ORM parent mapping association
      */
-    protected $parentAssociationMappings;
+    protected $parentAssociationMappings = array();
 
     /**
      * @var string the template name
@@ -120,7 +120,7 @@ abstract class BaseFieldDescription implements FieldDescriptionInterface
      * @var string the help message to display
      */
     protected $help;
-
+    
     /**
      * {@inheritdoc}
      */
